@@ -1,0 +1,377 @@
+@import "../fonts/fonts.css"
+$mid-blue: #072754
+$green: #27AE60
+$tr: transparent
+$wt: #E3E3E3
+$g-lig: 'GothamPro-Light'
+$g-reg: 'GothamPro'
+$g-med: 'GothamPro-Medium'
+$g-bold: 'GothamPro-Bold'
+$g-black: 'GothamPro-Black'
+
+@mixin ct
+  background-position: 50% 50%
+  background-size: contain
+  background-repeat: no-repeat
+@mixin cv
+  background-position: 50% 50%
+  background-size: cover
+  background-repeat: no-repeat
+@mixin ovl
+  content: ''
+  position: absolute
+  width: 100%
+  height: 100%
+  left: 0
+  top: 0
+@mixin ease
+  transition: .4s all ease
+
+// media-query "max-width"
+@mixin r($width)
+  @media only screen and (max-width: $width + "px")
+    @content
+
+body
+  scroll-behavior: smooth
+  background-color: #fff
+  font-family: $g-reg, sans-serif
+  color: #000
+  font-size: 16px
+  line-height: 1.4
+  position: relative
+  -webkit-font-smoothing: antialiased
+*,
+*:after,
+*:before
+  transition: .3s all ease
+h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, h6::selection, p::selection, a::selection, span::selection, div::selection, img::selection, mark::selection, ul::selection, li::selection
+  color           : #fff
+  background-color : #000
+::selection
+  color           : #fff
+  background-color : #000
+a, a:hover, a:active, a:focus,
+button, input, button:hover, button:active, button:focus,
+input:focus, input:active, .btn, .btn:after, select:focus, select:active
+  text-decoration: none
+  outline: none
+  transition: all 0.4s ease
+  cursor: pointer
+a
+  color: #000
+  &:hover
+    color: $green
+button
+  border: transparent
+  background: none
+option
+  color: #000
+textarea
+  resize:none
+  overflow: hidden
+  &::placeholder
+    color: #000
+input,
+textarea,
+select
+  color: #000
+  font-family: $g-med
+  font-size: 14px
+  padding: 12px 30px
+  border-radius: 2px
+  border: 1px solid #E0E0E0
+// input,
+// select
+//  border: 1px solid #fff
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder
+  color: #000
+input:focus,
+textarea:focus,
+input:active,
+textarea:active
+  // background: #ffff
+  color: #000
+  box-shadow: inset 0px 0px 5px 1px $green
+  outline: none
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+  -webkit-appearance: none
+input[type="number"]
+  -moz-appearance: textfield
+  appearance: textfield
+.select__wrp
+  border: 1px solid #BDBDBD
+  border-radius: 3px
+  position: relative
+  display: flex
+  background-color: #fff
+  &::before
+    content: ''
+    position: absolute
+    width: 20px
+    height: 20px
+    background: url('../img/select__arr.png') no-repeat 50% 50% / contain
+    top: 50%
+    transform: translateY(-50%)
+    right: 9px
+  select
+    width: 100%
+    background-color: $tr
+    border: none
+    padding: 8px 40px 8px 12px
+    position: relative
+    appearance: none
+    option
+      width: 100%
+  &:hover
+    &::before
+      transform: translateY(-50%) scale(.9)
+.fancybox-container *
+  transition: unset
+.fancybox-slide--html
+  padding: 0
+/* Custom animation */
+.fancybox-fx-slide-in-in.fancybox-slide--next,
+.fancybox-fx-slide-in-in.fancybox-slide--previous
+  transform: translateX(100%)
+
+.fancybox-fx-slide-in-in.fancybox-slide--current
+  transform: translateX(0)
+.checkbox
+  cursor: pointer
+  position: relative
+  margin-bottom: 0
+  input[type="checkbox"],
+  input[type="radio"]
+    position: absolute
+    z-index: 1
+    opacity: 0
+    width: 100%
+    height: 20px
+    cursor: pointer
+  .checkbox__text
+    font-size: 14px
+    position: relative
+    padding-left: 30px
+    cursor: pointer
+    width: 100%
+    display: block
+    &::before
+      content: ''
+      position: absolute
+      top: -1px
+      left: 0px
+      width: 20px
+      height: 20px
+      border-radius: 2px
+      border: 1px solid #c3c2c2
+      background: #fff
+    &::after
+      content: ''
+      position: absolute
+      top: 5px
+      left: 3px
+      width: 14px
+      height: 9px
+      background-image: url('../img/icon__gal.svg')
+      +ct
+      border-radius: 2px
+      opacity: 0
+      transform: scale(0)
+      transition: 0.2s
+    a
+      color: $green
+      text-decoration: underline
+      position: relative
+      z-index: 2
+  input[type="checkbox"]:checked + .checkbox__text:after,
+  input[type="radio"]:checked + .checkbox__text:after
+    opacity: 1
+    transform: scale(1)
+  input[type="checkbox"]:checked + .checkbox__text:before,
+  input[type="radio"]:checked + .checkbox__text:before
+    background-color: #fff
+.img-fluid
+  max-width: 100%
+  height: auto
+.shd,
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  &:hover
+    box-shadow: 0px 30px 40px rgba(0, 80, 147, 0.25)
+.w100
+  width: 100%
+.b
+  font-family: $g-bold
+.m
+  font-family: $g-med
+.tac
+  text-align: center
+.tal
+  text-align: left !important
+.und
+  text-decoration: underline
+.upp
+  text-transform: uppercase
+.btn
+  outline: none
+  font-size: 14px
+  font-family: $g-med
+  letter-spacing: .5px
+  text-align: center
+  padding: 12px 25px
+  color: #fff
+  background: #31CF74
+  display: inline-block
+  border-radius: 3px
+  position: relative
+  overflow: hidden
+  &:hover
+    color: #fff
+    background: $green
+.map
+  position: relative
+  min-height: 100vh
+  width: 100%
+  +cv
+  background-image: url('../img/map__bg.jpg')
+  &__top
+    padding-top: 25px
+  &__loc
+    &-item
+      font-family: $g-bold
+      padding: 12px 15px
+      border-radius: 4px
+      color: #000
+      background-color: #fff
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3)
+      &-btn
+        padding: 0
+        svg
+          stroke: #BDBDBD
+        &:hover
+          svg
+            stroke: #FF2727
+      &:hover
+        box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.25)
+      &:not(:last-child)
+        margin-right: 8px
+    &-btn
+      &_active
+        text-transform: uppercase
+        background: linear-gradient(180deg, #31DF7B 0%, #106433 100%)
+        border: 1px solid $green
+        &:hover
+          background: linear-gradient(180deg, #31DF7B 0%, #106433 100%)
+          box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.25)
+  &__cnt
+    position: relative
+  &__pop
+    &-wrp
+      padding: 43px 15px 0
+      background-color: transparent
+      .fancybox-close-small
+        top: 0
+        right: 3px
+        padding: 0
+        svg
+          path
+            fill: #fff
+    &-in
+      min-width: 730px
+      background-color: #fff
+      padding: 35px 35px
+      border-radius: 3px
+    &-ttl
+      font-family: $g-bold
+      font-size: 28px
+      margin-bottom: 20px
+      text-transform: uppercase
+      text-align: center
+    &-btn
+      color: #fff
+      background-color: $green
+      border-radius: 3px
+      padding: 2px
+      cursor: pointer
+      +ease
+      &-left
+        width: 100%
+        padding: 10px 10px
+        border-radius: 3px
+        background: linear-gradient(180deg, #31DF7B 0%, #106433 100%)
+      &-arr
+        width: 45px
+        svg
+          fill: none
+          stroke: #fff
+      &:hover
+        box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.25)
+    &-cnt
+      margin-top: 8px
+      padding: 20px
+      border: 1px solid #B6B6B6
+      border-radius: 4px
+      .checkbox
+        &:not(:last-child)
+          margin-bottom: 13px
+    &-bot
+      &-btn
+        display: flex
+        justify-content: center
+        align-items: center
+        font-family: $g-reg
+        text-transform: uppercase
+        background: linear-gradient(180deg, #31DF7B 0%, #106433 100%)
+        border: 1px solid $green
+        &:hover
+          background: linear-gradient(180deg, #31DF7B 0%, #106433 100%)
+          box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.25)
+        .map__pop-bot-gal
+          &:nth-child(1)
+            width: 20px
+            height: 20px
+            border: 1px solid #fff
+            border-radius: 3px
+            position: relative
+            &::before
+              content: ''
+              position: absolute
+              width: 12px
+              height: 8px
+              background-image: url('../img/icon__gal_white.svg')
+              +ct
+              left: 50%
+              top: 50%
+              transform: translate(-50%,-50%)
+.baloon
+  position: absolute
+  z-index: 1
+  &_1
+    left: 45px
+    top: 100px
+  &_2
+    left: 85px
+    top: 400px
+  &_active
+    left: 43%
+    top: 356px
+  &__item
+    position: absolute
+    left: 46%
+    top: 65px
+    width: 325px
+    background-color: #fff
+    border-radius: 3px
+    padding: 25px
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    &-ttl
+      font-size: 18px
+    &-img
+      width: 100%
+      height: 152px
+      +cv
+    &-link
+      color: $green

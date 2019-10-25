@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#6232ad">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>New Project</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="map">
+    <div class="map__top">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex flex-wrap align-items-center">
+            <div class="map__loc-item d-flex justify-content-center align-items-center">
+              <span class="mr-2">Таганка</span>
+              <button type="button" class="map__loc-item-btn">
+                <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L12 12M1 12L12 1" stroke-width="2"/>
+                </svg>
+              </button>
+            </div>
+            <div class="map__loc-item d-flex justify-content-center align-items-center">
+              <span class="mr-2">Басманный</span>
+              <button type="button" class="map__loc-item-btn">
+                <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L12 12M1 12L12 1" stroke-width="2"/>
+                </svg>
+              </button>
+            </div>
+            <div class="map__loc-item d-flex justify-content-center align-items-center">
+              <span class="mr-2">Хамовники</span>
+              <button type="button" class="map__loc-item-btn">
+                <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L12 12M1 12L12 1" stroke-width="2"/>
+                </svg>
+              </button>
+            </div>
+            <div class="map__loc-item d-flex justify-content-center align-items-center">
+              <span class="mr-2">Запад</span>
+              <button type="button" class="map__loc-item-btn">
+                <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L12 12M1 12L12 1" stroke-width="2"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <button type="button" data-fancybox data-src="#popup_map" class="btn map__loc-btn map__loc-btn_active">Выберите район</button>
+        </div>
+      </div>
+    </div>
+    <div class="map__cnt">
+      <div class="baloon baloon_1">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.5" filter="url(#filter0_d)">
+          <circle cx="30" cy="28" r="28" fill="white"/>
+          </g>
+          <circle cx="30" cy="28" r="23" fill="#27AE60"/>
+          <circle cx="30" cy="28" r="17" fill="url(#paint0_linear)"/>
+          <path d="M30.5 20V37M22 28.5L39 28.5" stroke="black"/>
+          <defs>
+          <filter id="filter0_d" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+          <feOffset dy="2"/>
+          <feGaussianBlur stdDeviation="1"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+          </filter>
+          <linearGradient id="paint0_linear" x1="30" y1="11" x2="30" y2="45" gradientUnits="userSpaceOnUse">
+          <stop stop-color="white"/>
+          <stop offset="1" stop-color="#E3E3E3"/>
+          </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="baloon baloon_2">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.5" filter="url(#filter0_d)">
+          <circle cx="30" cy="28" r="28" fill="white"/>
+          </g>
+          <circle cx="30" cy="28" r="23" fill="#27AE60"/>
+          <circle cx="30" cy="28" r="17" fill="url(#paint0_linear)"/>
+          <path d="M30.5 20V37M22 28.5L39 28.5" stroke="black"/>
+          <defs>
+          <filter id="filter0_d" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+          <feOffset dy="2"/>
+          <feGaussianBlur stdDeviation="1"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+          </filter>
+          <linearGradient id="paint0_linear" x1="30" y1="11" x2="30" y2="45" gradientUnits="userSpaceOnUse">
+          <stop stop-color="white"/>
+          <stop offset="1" stop-color="#E3E3E3"/>
+          </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="baloon baloon_active">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.5" filter="url(#filter0_d)">
+          <circle cx="30" cy="28" r="28" fill="white"/>
+          </g>
+          <circle cx="30" cy="28" r="23" fill="#27AE60"/>
+          <circle cx="30" cy="28" r="17" fill="#27AE60"/>
+          <path d="M30.5 20V37M22 28.5L39 28.5" stroke="white"/>
+          <defs>
+          <filter id="filter0_d" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" resulat="BackgroundImageFix"/>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+          <feOffset dy="2"/>
+          <feGaussianBlur stdDeviation="1"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+          </filter>
+          <linearGradient id="paint0_linear" x1="30" y1="11" x2="30" y2="45" gradientUnits="userSpaceOnUse">
+          <stop stop-color="white"/>
+          <stop offset="1" stop-color="#E3E3E3"/>
+          </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="baloon__item">
+        <div class="baloon__item-ttl b mb-2">ЖК Европейский</div>
+        <div class="baloon__item-img mb-2" style="background-image: url(img/map__item-img_1.jpg)"></div>
+        <div class="mb-2">1-5 комн. квартиры<br> от 20 до 100 млн рублей</div>
+        <a href="#" class="baloon__item-link und">Перейти на страницу ЖК</a>
+      </div>
+    </div>
+  </div>
+  <div id="popup_map" style="display: none" class="map__pop-wrp">
+    <div class="map__pop-in">
+      <div class="map__pop-ttl">Выберите район</div>
+      <div class="row">
+        <div class="col-xl-4 col-sm-6 mb-3 mb-xl-0">
+          <div class="map__pop-item">
+            <div class="map__pop-btn">
+              <div class="d-flex align-items-center">
+                <div class="map__pop-btn-left">
+                  <span class="b">САДОВОЕ КОЛЬЦО</span> (50)
+                </div>
+                <button type="button" class="map__pop-btn-arr">
+                  <svg width="16" height="10" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 8L8 2L14 8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="map__pop-cnt">
+              <div class="d-flex flex-column align-items-start">
+                <label for="map__checkbox_1" class="checkbox">
+                  <input type="checkbox" id="map__checkbox_1" required="">
+                  <span class="checkbox__text"><span class="b">ОСТОЖЕНКА-АРБАТ</span> (5)</span>
+                </label>
+                <label for="map__checkbox_2" class="checkbox">
+                  <input type="checkbox" id="map__checkbox_2" required="">
+                  <span class="checkbox__text"><span class="b">ПАТРИАРШИЕ-ТВЕРСКАЯ</span> (5)</span>
+                </label>
+                <label for="map__checkbox_3" class="checkbox">
+                  <input type="checkbox" id="map__checkbox_3" required="">
+                  <span class="checkbox__text"><span class="b">ТАГАНКА</span> (25)</span>
+                </label>
+                <label for="map__checkbox_4" class="checkbox">
+                  <input type="checkbox" id="map__checkbox_4" required="">
+                  <span class="checkbox__text"><span class="b">ЗАМОСКВОРЕЧЬЕ</span> (10)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 mb-3 mb-xl-0">
+          <div class="map__pop-item">
+            <div class="map__pop-btn">
+              <div class="d-flex align-items-center">
+                <div class="map__pop-btn-left">
+                  <span class="b">ТРЕТЬЕ КОЛЬЦО</span> (50)
+                </div>
+                <button type="button" class="map__pop-btn-arr">
+                  <svg width="16" height="10" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 8L8 2L14 8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="map__pop-cnt">
+              <div class="d-flex flex-column align-items-start">
+                <label for="map__checkbox_1" class="checkbox">
+                  <input type="checkbox" id="map__checkbox_1" required="">
+                  <span class="checkbox__text"><span class="b">ОСТОЖЕНКА-АРБАТ</span> (5)</span>
+                </label>
+                <label for="map__checkbox_2" class="checkbox">
+                  <input type="checkbox" id="map__checkbox_2" required="">
+                  <span class="checkbox__text"><span class="b">ПАТРИАРШИЕ-ТВЕРСКАЯ</span> (5)</span>
+                </label>
+                <label for="map__checkbox_3" class="checkbox">
+                  <input type="checkbox" id="map__checkbox_3" required="">
+                  <span class="checkbox__text"><span class="b">ТАГАНКА</span> (25)</span>
+                </label>
+                <label for="map__checkbox_4" class="checkbox">
+                  <input type="checkbox" id="map__checkbox_4" required="">
+                  <span class="checkbox__text"><span class="b">ЗАМОСКВОРЕЧЬЕ</span> (10)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-sm-6 mb-3 mb-xl-0">
+          <div class="map__pop-item">
+            <div class="map__pop-btn">
+              <div class="d-flex align-items-center">
+                <div class="map__pop-btn-left">
+                  <span class="b">МКАД</span> (50)
+                </div>
+                <button type="button" class="map__pop-btn-arr">
+                  <svg width="16" height="10" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 8L8 2L14 8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="map__pop-cnt">
+              <div class="d-flex flex-column align-items-start">
+                <label for="map__checkbox_1" class="checkbox">
+                  <input type="checkbox" id="map__checkbox_1" required="">
+                  <span class="checkbox__text"><span class="b">ОСТОЖЕНКА-АРБАТ</span> (5)</span>
+                </label>
+                <label for="map__checkbox_2" class="checkbox">
+                  <input type="checkbox" id="map__checkbox_2" required="">
+                  <span class="checkbox__text"><span class="b">ПАТРИАРШИЕ-ТВЕРСКАЯ</span> (5)</span>
+                </label>
+                <label for="map__checkbox_3" class="checkbox">
+                  <input type="checkbox" id="map__checkbox_3" required="">
+                  <span class="checkbox__text"><span class="b">ТАГАНКА</span> (25)</span>
+                </label>
+                <label for="map__checkbox_4" class="checkbox">
+                  <input type="checkbox" id="map__checkbox_4" required="">
+                  <span class="checkbox__text"><span class="b">ЗАМОСКВОРЕЧЬЕ</span> (10)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center mt-4">
+        <button class="map__pop-bot-btn btn mr-4">
+          <span class="mr-2 map__pop-bot-gal"></span>
+          <span class="b mr-2">ВЫБРАТЬ ВСЕ</span> (150)
+        </button>
+        <button class="map__pop-bot-btn btn">
+          <span class="b">ПРИМЕНИТЬ</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="js/libs.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
