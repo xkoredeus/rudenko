@@ -13,7 +13,7 @@
   <div class="map">
     <div class="map__top">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex justify-content-between align-items-start flex-wrap flex-xl-nowrap">
           <div class="d-flex flex-wrap align-items-center">
             <div class="map__loc-item d-flex justify-content-center align-items-center">
               <span class="mr-2">Таганка</span>
@@ -48,7 +48,7 @@
               </button>
             </div>
           </div>
-          <button type="button" data-fancybox data-src="#popup_map" class="btn map__loc-btn map__loc-btn_active">Выберите район</button>
+          <button type="button" data-fancybox data-src="#popup_map" class="btn map__loc-btn">Выберите район</button>
         </div>
       </div>
     </div>
@@ -140,122 +140,134 @@
     <div class="map__pop-in">
       <div class="map__pop-ttl">Выберите район</div>
       <div class="row">
-        <div class="col-xl-4 col-sm-6 mb-3 mb-xl-0">
+        <div class="col-xl-4 mb-3 mb-xl-0">
           <div class="map__pop-item">
             <div class="map__pop-btn">
               <div class="d-flex align-items-center">
                 <div class="map__pop-btn-left">
-                  <span class="b">САДОВОЕ КОЛЬЦО</span> (50)
+                  <span class="b">Внутри Садового кольца</span> (50)
                 </div>
                 <button type="button" class="map__pop-btn-arr">
-                  <svg width="16" height="10" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="12" height="6" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 8L8 2L14 8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </button>
               </div>
             </div>
             <div class="map__pop-cnt">
-              <div class="d-flex flex-column align-items-start">
+              <div class="d-flex flex-column align-items-start mb-3">
                 <label for="map__checkbox_1" class="checkbox">
                   <input type="checkbox" id="map__checkbox_1" required="">
-                  <span class="checkbox__text"><span class="b">ОСТОЖЕНКА-АРБАТ</span> (5)</span>
+                  <span class="checkbox__text"><span class="b">Остоженка-Арбат</span> (5)</span>
                 </label>
                 <label for="map__checkbox_2" class="checkbox">
                   <input type="checkbox" id="map__checkbox_2" required="">
-                  <span class="checkbox__text"><span class="b">ПАТРИАРШИЕ-ТВЕРСКАЯ</span> (5)</span>
+                  <span class="checkbox__text"><span class="b">Патриаршие-Тверская</span> (5)</span>
                 </label>
                 <label for="map__checkbox_3" class="checkbox">
                   <input type="checkbox" id="map__checkbox_3" required="">
-                  <span class="checkbox__text"><span class="b">ТАГАНКА</span> (25)</span>
+                  <span class="checkbox__text"><span class="b">Таганка</span> (25)</span>
                 </label>
                 <label for="map__checkbox_4" class="checkbox">
                   <input type="checkbox" id="map__checkbox_4" required="">
-                  <span class="checkbox__text"><span class="b">ЗАМОСКВОРЕЧЬЕ</span> (10)</span>
+                  <span class="checkbox__text"><span class="b">Замоскворечье</span> (10)</span>
                 </label>
               </div>
+              <button class="map__pop-bot-btn btn w-100">
+                <span class="mr-2 btn map__pop-bot-gal"></span>
+                <span class="b mr-2">Выбрать весь район</span> (150)
+              </button>
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-sm-6 mb-3 mb-xl-0">
+        <div class="col-xl-4 mb-3 mb-xl-0">
           <div class="map__pop-item">
             <div class="map__pop-btn">
               <div class="d-flex align-items-center">
                 <div class="map__pop-btn-left">
-                  <span class="b">ТРЕТЬЕ КОЛЬЦО</span> (50)
+                  <span class="b">Внутри Третьего кольца</span> (50)
                 </div>
                 <button type="button" class="map__pop-btn-arr">
-                  <svg width="16" height="10" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="12" height="6" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 8L8 2L14 8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </button>
               </div>
             </div>
             <div class="map__pop-cnt">
-              <div class="d-flex flex-column align-items-start">
+              <div class="d-flex flex-column align-items-start mb-3">
                 <label for="map__checkbox_1" class="checkbox">
                   <input type="checkbox" id="map__checkbox_1" required="">
-                  <span class="checkbox__text"><span class="b">ОСТОЖЕНКА-АРБАТ</span> (5)</span>
+                  <span class="checkbox__text"><span class="b">Остоженка-Арбат</span> (5)</span>
                 </label>
                 <label for="map__checkbox_2" class="checkbox">
                   <input type="checkbox" id="map__checkbox_2" required="">
-                  <span class="checkbox__text"><span class="b">ПАТРИАРШИЕ-ТВЕРСКАЯ</span> (5)</span>
+                  <span class="checkbox__text"><span class="b">Патриаршие-Тверская</span> (5)</span>
                 </label>
                 <label for="map__checkbox_3" class="checkbox">
                   <input type="checkbox" id="map__checkbox_3" required="">
-                  <span class="checkbox__text"><span class="b">ТАГАНКА</span> (25)</span>
+                  <span class="checkbox__text"><span class="b">Таганка</span> (25)</span>
                 </label>
                 <label for="map__checkbox_4" class="checkbox">
                   <input type="checkbox" id="map__checkbox_4" required="">
-                  <span class="checkbox__text"><span class="b">ЗАМОСКВОРЕЧЬЕ</span> (10)</span>
+                  <span class="checkbox__text"><span class="b">Замоскворечье</span> (10)</span>
                 </label>
               </div>
+              <button class="map__pop-bot-btn btn w-100">
+                <span class="mr-2 btn map__pop-bot-gal"></span>
+                <span class="b mr-2">Выбрать весь район</span> (150)
+              </button>
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-sm-6 mb-3 mb-xl-0">
+        <div class="col-xl-4 mb-3 mb-xl-0">
           <div class="map__pop-item">
             <div class="map__pop-btn">
               <div class="d-flex align-items-center">
                 <div class="map__pop-btn-left">
-                  <span class="b">МКАД</span> (50)
+                  <span class="b">Внутри МКАД</span> (50)
                 </div>
                 <button type="button" class="map__pop-btn-arr">
-                  <svg width="16" height="10" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="12" height="6" viewBox="0 0 16 10" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 8L8 2L14 8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </button>
               </div>
             </div>
             <div class="map__pop-cnt">
-              <div class="d-flex flex-column align-items-start">
+              <div class="d-flex flex-column align-items-start mb-3">
                 <label for="map__checkbox_1" class="checkbox">
                   <input type="checkbox" id="map__checkbox_1" required="">
-                  <span class="checkbox__text"><span class="b">ОСТОЖЕНКА-АРБАТ</span> (5)</span>
+                  <span class="checkbox__text"><span class="b">Остоженка-Арбат</span> (5)</span>
                 </label>
                 <label for="map__checkbox_2" class="checkbox">
                   <input type="checkbox" id="map__checkbox_2" required="">
-                  <span class="checkbox__text"><span class="b">ПАТРИАРШИЕ-ТВЕРСКАЯ</span> (5)</span>
+                  <span class="checkbox__text"><span class="b">Патриаршие-Тверская</span> (5)</span>
                 </label>
                 <label for="map__checkbox_3" class="checkbox">
                   <input type="checkbox" id="map__checkbox_3" required="">
-                  <span class="checkbox__text"><span class="b">ТАГАНКА</span> (25)</span>
+                  <span class="checkbox__text"><span class="b">Таганка</span> (25)</span>
                 </label>
                 <label for="map__checkbox_4" class="checkbox">
                   <input type="checkbox" id="map__checkbox_4" required="">
-                  <span class="checkbox__text"><span class="b">ЗАМОСКВОРЕЧЬЕ</span> (10)</span>
+                  <span class="checkbox__text"><span class="b">Замоскворечье</span> (10)</span>
                 </label>
               </div>
+              <button class="map__pop-bot-btn btn w-100">
+                <span class="mr-2 btn map__pop-bot-gal"></span>
+                <span class="b mr-2">Выбрать весь район</span> (150)
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <div class="d-flex justify-content-center align-items-center mt-4">
-        <button class="map__pop-bot-btn btn mr-4">
-          <span class="mr-2 map__pop-bot-gal"></span>
-          <span class="b mr-2">ВЫБРАТЬ ВСЕ</span> (150)
+      <div class="d-flex justify-content-center flex-column flex-xl-row align-items-center mt-4">
+        <button class="map__pop-bot-btn btn mr-xl-4 mb-2 mb-xl-0">
+          <span class="mr-2 btn map__pop-bot-gal"></span>
+          <span class="b mr-2">Выберите все районы</span> (150)
         </button>
         <button class="map__pop-bot-btn btn">
-          <span class="b">ПРИМЕНИТЬ</span>
+          <span class="b">Применить</span>
         </button>
       </div>
     </div>
